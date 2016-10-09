@@ -56,6 +56,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BED-HG-LWy">
                                 <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="recordTapped:" destination="l10-Ol-JzN" eventType="touchUpInside" id="D55-Pg-Q1w"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88S-gn-fUk">
                                 <state key="normal" title="Play"/>
@@ -91,7 +94,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="MTD-xO-qVZ" id="6VQ-ou-a43"/>
                         <outlet property="nameTextField" destination="IEp-m5-aNb" id="cF8-fk-mtM"/>
+                        <outlet property="playButton" destination="88S-gn-fUk" id="BmK-RI-VgQ"/>
                         <outlet property="recordButton" destination="BED-HG-LWy" id="KHh-hr-fgW"/>
                     </connections>
                 </viewController>
