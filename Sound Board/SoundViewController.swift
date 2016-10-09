@@ -109,6 +109,9 @@ class SoundViewController: UIViewController {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
         let sound = Sound(context: context)
+        
+        sound.name = nameTextField.text
+
 
     }
     
